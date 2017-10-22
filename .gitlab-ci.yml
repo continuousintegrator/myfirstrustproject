@@ -1,0 +1,7 @@
+image: "scorpil/rust:stable"
+
+test:cargo: 
+  script: 
+  - rustc --version && cargo --version 
+  - rustc hello.rs 
+  - ./hello
